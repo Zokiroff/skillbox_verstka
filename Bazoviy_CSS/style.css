@@ -1,4 +1,4 @@
-/* html {
+html {
   box-sizing: border-box;
 }
 *,
@@ -15,13 +15,22 @@ img {
 }
 body {
   font-family: 'font', sans-serif;
-} */
+}
 
-
-
-
-h1 {
-  font-size: 30px;
-  font-style: italic;
-  color: yellowgreen;
+.content {
+  padding: 2rem 1 rem;
+}
+h2 {
+  margin: 0 0 1em;
+}
+ul {
+  margin: 0;
+  display: inline-block;
+  padding-left: 1em;
+}
+ul:not(:last-child) {
+  margin: 0 2em 1em 0;
+}
+.example:not(:last-child) {
+  margin-bottom: 2rem;
 }
