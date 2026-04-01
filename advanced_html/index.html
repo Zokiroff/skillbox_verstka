@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Advanced HTML</title>
+	<base target="_blank">
+</head>
+<body>
+	<video 
+	width="480" 
+	controls
+	poster="poster.jpg"
+	loop
+	preload="auto"
+	autoplay
+	muted>
+		<source src="video.webm" type="video/webm">
+		<source src="video.mp4" type="video/mp4">
+	</video>
+
+	<picture>
+		<source crcset="poster.webp" type="image/webp">
+		<img src="poster.jpg" width="400">
+	</picture>
+
+<details>
+	<summary>Who killer?</summary>
+	Killer - butler
+</details>
+
+<p>Lorem ipsum dolor, sit amet <mark>consectetur</mark> adipisicing.</p>
+
+<blockquote cite="https://go.skillbox.ru/profession">
+	<p>
+		Тег &lt;tr&gt; образует контейнер для создания строки таблицы. Каждая ячейка в такой строке устанавливается с помощью
+			тега lt;td&gt; (хотя первая может быть задана и тегом
+			lt;th&gt;).
+	</p>
+</blockquote>
+
+<form action="#" method="post">
+	<input type="text" required maxlength="5" placeholder="Введите текст">
+	<input type="number" min="0" max="10">
+	<input type="email">
+	<input type="tel">
+	<input type="password">
+	<input type="date">
+	<input type="search">
+	<input type="file" accept="image/*">
+	<input type="hidden">
+	<button type="submit">Отправить</button>
+</form>
+
+<form action="#" method="post">
+	<fieldset>
+		<legend>Выбор пола</legend>
+		<label>
+			<input type="radio" name="gender" value="Мужской пол">Мужской пол
+		</label>
+		
+		<input type="radio" name="gender" value="Женский пол" checked>Женский пол
+		
+		<textarea name="message" placeholder="Введите сообщение"></textarea>
+		
+		<select name="city">
+			<option value="Мурманск">Мурманск</option>
+			<option value="Питер">Питер</option>
+			<option value="Москва" disabled>Москва</option>
+		</select>
+		
+		<button type="submit">Отправить</button>
+	</fieldset>
+</form>
+
+</body>
+</html>
